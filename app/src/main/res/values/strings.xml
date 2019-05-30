@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RunAppNaples</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="benvenuto">Benvenuto</string>
+    <string name="luoghi">Luoghi</string>
+    <string name="maps">Maps</string>
+    <string name="meteo">Meteo</string>
+
+
+    <string name="destinazione">Destinazione</string>
+    <string name="orari">Orari</string>
+    <string name="telefono">Telefono</string>
+    <string name="servizi">Servizi</string>
+    <string name="sitoweb">Sito Web</string>
+
+
+</resources>
