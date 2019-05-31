@@ -27,11 +27,11 @@ public class HomeActivity extends AppCompatActivity {
         );
 
 
-        Button meteo = (Button) this.<View>findViewById(R.id.b_meteo);
+        Button meteo = (Button) this.<View>findViewById(R.id.b_contapassi);
         meteo.setOnClickListener(new View.OnClickListener() {
                                      @Override
                                      public void onClick(View v){
-                                         Intent i=new Intent(HomeActivity.this,MainActivity.class);
+                                         Intent i=new Intent(HomeActivity.this,ContapassiActivity.class);
                                          startActivity(i);
                                      }
                                  }
@@ -51,5 +51,10 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
+
+
+
     }
 }
+
+

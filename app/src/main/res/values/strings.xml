@@ -6,6 +6,7 @@
     <string name="luoghi">Luoghi</string>
     <string name="maps">Maps</string>
     <string name="meteo">Meteo</string>
+    <string name="contapassi">Contapassi</string>
 
 
     <string name="destinazione">Destinazione</string>
@@ -13,6 +14,9 @@
     <string name="telefono">Telefono</string>
     <string name="servizi">Servizi</string>
     <string name="sitoweb">Sito Web</string>
+
+    <string name="passipercorsioggi">Passi percorsi oggi</string>
+    <string name="passitotalipercorsi">Passi totali percorsi</string>
 
 
 </resources>

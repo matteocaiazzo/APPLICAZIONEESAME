@@ -55,15 +55,14 @@
             android:text="@string/maps" />
 
         <Button
-            android:id="@+id/b_meteo"
+            android:id="@+id/b_contapassi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="20dp"
             android:paddingTop="20dp"
             android:textColor="@android:color/background_light"
             android:backgroundTint="@color/colorPrimaryDark"
-            android:text="@string/meteo" />
-
+            android:text="@string/contapassi" />
 
 
 

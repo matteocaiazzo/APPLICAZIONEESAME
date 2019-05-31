@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextWatcher;
+import android.text.util.Linkify;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -52,6 +53,8 @@ public class LuoghiActivity extends AppCompatActivity {
                     telefono.setText("0817499111");
                     servizi.setText("Museo,Bagno,AreaCani");
                     sitoweb.setText("www.museocapodimonte.beniculturali.it");
+                    Linkify.addLinks(telefono,Linkify.PHONE_NUMBERS);
+                    Linkify.addLinks(sitoweb,Linkify.WEB_URLS);
                 }
 
                 if(luogoscelto.equals ("Virgiliano")) {
@@ -59,6 +62,8 @@ public class LuoghiActivity extends AppCompatActivity {
                     telefono.setText("08119706082");
                     servizi.setText("PuntiRistoro,Bagni");
                     sitoweb.setText("n.d.");
+                    Linkify.addLinks(telefono,Linkify.PHONE_NUMBERS);
+
                 }
 
 
@@ -67,6 +72,9 @@ public class LuoghiActivity extends AppCompatActivity {
                     telefono.setText("0817258000");
                     servizi.setText("PuntiRistoro,Bagni,AreaCani,NoleggioBici");
                     sitoweb.setText("www.mostradoltremare.it");
+                    Linkify.addLinks(telefono,Linkify.PHONE_NUMBERS);
+                    Linkify.addLinks(sitoweb,Linkify.WEB_URLS);
+
                 }
             }
 
