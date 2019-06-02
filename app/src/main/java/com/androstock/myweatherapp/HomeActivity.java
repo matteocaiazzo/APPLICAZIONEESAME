@@ -49,6 +49,17 @@ public class HomeActivity extends AppCompatActivity {
         );
 
 
+        Button bpm = (Button) this.<View>findViewById(R.id.b_bpm);
+        bpm.setOnClickListener(new View.OnClickListener() {
+                                   @Override
+                                   public void onClick(View v){
+                                       Intent i=new Intent(HomeActivity.this,BpmActivity.class);
+                                       startActivity(i);
+                                   }
+                               }
+        );
+
+
 
 
 
@@ -56,5 +67,6 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 }
+
 
 

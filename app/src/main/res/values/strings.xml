@@ -7,6 +7,8 @@
     <string name="maps">Maps</string>
     <string name="meteo">Meteo</string>
     <string name="contapassi">Contapassi</string>
+    <string name="bpm">Frequenza cardiaca</string>
+    <string name="default_text">Calcolo bpm in corso</string>
 
 
     <string name="destinazione">Destinazione</string>

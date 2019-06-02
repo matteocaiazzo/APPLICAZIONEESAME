@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:text="@string/benvenuto"
+        android:text="@string/bpm"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp"
         android:textStyle="normal|bold"
@@ -17,6 +17,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline11" />
+
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -27,53 +29,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline12">
 
-        <ImageView
-            android:id="@+id/imageView"
+
+
+        <SurfaceView
+            android:id="@+id/preview"
             android:layout_width="338dp"
             android:layout_height="140dp"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/corri" />
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"></SurfaceView>
 
-        <Button
-            android:id="@+id/b_luoghi"
+        <com.androstock.myweatherapp.HeartbeatPic
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"></com.androstock.myweatherapp.HeartbeatPic>
+
+
+
+        <TextView
+            android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp"
-            android:textColor="@android:color/background_light"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:text="@string/luoghi" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="28sp"
+            android:textStyle="normal|bold"
+            android:text="@string/default_text"></TextView>
 
-        <Button
-            android:id="@+id/b_maps"
+        <TextView
+            android:id="@+id/rollavg_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp"
-            android:textColor="@android:color/background_light"
-            android:text="@string/maps" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
 
-        <Button
-            android:id="@+id/b_contapassi"
+        <TextView
+            android:id="@+id/img_avg_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp"
-            android:textColor="@android:color/background_light"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:text="@string/contapassi" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rollavg_text"
+            android:layout_marginTop="23dp"
+            android:text="TextView" />
 
-
-        <Button
-            android:id="@+id/b_bpm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp"
-            android:textColor="@android:color/background_light"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:text="@string/bpm" />
 
 
 
