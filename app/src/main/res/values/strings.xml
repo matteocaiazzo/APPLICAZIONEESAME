@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">RunAppNaples</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_luoghi">Luoghi</string>
+    <string name="title_activity_bpm">Bpm</string>
+    <string name="title_activity_contapassi">Contapassi</string>
+
+
+
 
     <string name="benvenuto">Benvenuto</string>
     <string name="luoghi">Luoghi</string>

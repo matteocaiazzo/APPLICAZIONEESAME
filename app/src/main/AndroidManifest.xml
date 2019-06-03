@@ -41,9 +41,18 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".LuoghiActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".LuoghiActivity"
+            android:label="@string/title_activity_luoghi" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" />
+
+
+        <activity
+            android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -3,7 +3,6 @@ package com.androstock.myweatherapp;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.hardware.Sensor;
@@ -46,7 +45,6 @@ public class ContapassiActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contapassi);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
