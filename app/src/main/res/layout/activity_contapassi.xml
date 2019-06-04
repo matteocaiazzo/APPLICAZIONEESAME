@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/shout_napoli_4"
     tools:context=".ContapassiActivity">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
         android:text="@string/contapassi"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="36sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -34,9 +35,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="20dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
 
 
         </LinearLayout>
@@ -46,9 +47,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/numberOfSteps"
@@ -57,11 +58,10 @@
                 android:layout_weight="1"
                 android:paddingBottom="5dp"
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
-                android:textStyle="normal|italic"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
+                android:textStyle="normal|italic" />
 
 
         </LinearLayout>
@@ -71,9 +71,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/numberOfStepsString"
@@ -83,11 +83,9 @@
                 android:paddingBottom="5dp"
                 android:text="@string/passitotalipercorsi"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="normal|italic" />
-
-
 
 
         </LinearLayout>
@@ -97,9 +95,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:paddingBottom="10dp"
             tools:layout_editor_absoluteX="38dp"
             tools:layout_editor_absoluteY="135dp">
 
@@ -108,14 +106,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:paddingBottom="5dp"
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="normal|italic" />
-
-
 
 
         </LinearLayout>

@@ -3,6 +3,7 @@ package com.androstock.myweatherapp;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.hardware.Sensor;
@@ -15,7 +16,7 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ContapassiActivity extends AppCompatActivity {
+public class ContapassiActivity extends Activity {
 
     private static final String TAG = "ContapassiActivity";
 

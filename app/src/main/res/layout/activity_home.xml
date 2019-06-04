@@ -2,7 +2,8 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/shout_napoli_4">
 
     <TextView
         android:id="@+id/textView2"
@@ -10,7 +11,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
         android:text="@string/benvenuto"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="36sp"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,50 +32,48 @@
             android:id="@+id/imageView"
             android:layout_width="338dp"
             android:layout_height="140dp"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/corri" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/b_luoghi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp"
-            android:textColor="@android:color/background_light"
             android:backgroundTint="@color/colorPrimaryDark"
-            android:text="@string/luoghi" />
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/luoghi"
+            android:textColor="@android:color/background_light" />
 
         <Button
             android:id="@+id/b_maps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimaryDark"
-            android:paddingBottom="20dp"
             android:paddingTop="20dp"
-            android:textColor="@android:color/background_light"
-            android:text="@string/maps" />
+            android:paddingBottom="20dp"
+            android:text="@string/maps"
+            android:textColor="@android:color/background_light" />
 
         <Button
             android:id="@+id/b_contapassi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp"
-            android:textColor="@android:color/background_light"
             android:backgroundTint="@color/colorPrimaryDark"
-            android:text="@string/contapassi" />
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/contapassi"
+            android:textColor="@android:color/background_light" />
 
 
         <Button
             android:id="@+id/b_bpm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp"
-            android:textColor="@android:color/background_light"
             android:backgroundTint="@color/colorPrimaryDark"
-            android:text="@string/bpm" />
-
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/bpm"
+            android:textColor="@android:color/background_light" />
 
 
     </LinearLayout>

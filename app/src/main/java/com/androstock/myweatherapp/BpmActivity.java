@@ -1,6 +1,7 @@
 package com.androstock.myweatherapp;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.hardware.Camera;
@@ -18,13 +19,8 @@ import android.widget.TextView;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 
-/**
- * This class extends Activity to handle a picture preview, process the preview
- * for a red values and determine a heart beat.
- *
- * @author Justin Wetherell <phishman3579@gmail.com>
- */
-public class BpmActivity extends AppCompatActivity {
+
+public class BpmActivity extends Activity {
 
     private static final String TAG = "HeartRateMonitor";
     private static final AtomicBoolean processing = new AtomicBoolean(false);
