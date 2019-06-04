@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/shout_napoli_4"
     tools:context=".LuoghiActivity">
 
     <TextView
         android:id="@+id/t_destinazione"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:fontFamily="monospace"
         android:text="@string/destinazione"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="36sp"
         android:textStyle="normal|bold"
+        app:fontFamily="monospace"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,9 +35,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="20dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
 
             <Spinner
                 android:id="@+id/sp_luoghi"
@@ -45,7 +46,7 @@
                 android:layout_weight="1"
                 android:paddingLeft="60dp"
                 android:paddingRight="60dp"
-                android:paddingBottom="30dp"/>
+                android:paddingBottom="30dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,9 +54,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/t_orari_titolo"
@@ -64,7 +65,7 @@
                 android:layout_weight="1"
                 android:paddingBottom="5dp"
                 android:text="@string/orari"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="normal|italic" />
         </LinearLayout>
@@ -74,9 +75,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/t_orari_valore"
@@ -87,6 +88,9 @@
                 android:focusable="true"
                 android:longClickable="true"
                 android:paddingBottom="5dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_default"
                 android:textIsSelectable="true"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -96,9 +100,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/t_telefono_titolo"
@@ -107,7 +111,11 @@
                 android:layout_weight="1"
                 android:paddingBottom="5dp"
                 android:text="@string/telefono"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+                android:textCursorDrawable="@drawable/common_google_signin_btn_icon_light_normal_background"
                 android:textSize="24sp"
                 android:textStyle="normal|italic" />
         </LinearLayout>
@@ -117,9 +125,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/t_telefono_valori"
@@ -130,6 +138,11 @@
                 android:focusable="true"
                 android:longClickable="true"
                 android:paddingBottom="5dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+                android:textCursorDrawable="@drawable/common_google_signin_btn_icon_light_normal_background"
                 android:textIsSelectable="true"
                 android:textSize="18sp" />
 
@@ -140,9 +153,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/t_servizi_titolo"
@@ -152,7 +165,11 @@
                 android:layout_weight="1"
                 android:paddingBottom="5dp"
                 android:text="@string/servizi"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+                android:textCursorDrawable="@drawable/common_google_signin_btn_icon_light_normal_background"
                 android:textSize="24sp"
                 android:textStyle="normal|italic" />
         </LinearLayout>
@@ -162,9 +179,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/t_servizi_valori"
@@ -176,6 +193,11 @@
                 android:focusable="true"
                 android:longClickable="true"
                 android:paddingBottom="5dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+                android:textCursorDrawable="@drawable/common_google_signin_btn_icon_light_normal_background"
                 android:textIsSelectable="true"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -185,9 +207,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:paddingBottom="10dp"
             tools:layout_editor_absoluteX="38dp"
             tools:layout_editor_absoluteY="135dp">
 
@@ -198,7 +220,7 @@
                 android:layout_weight="1"
                 android:paddingBottom="5dp"
                 android:text="@string/sitoweb"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp"
                 android:textStyle="normal|italic" />
         </LinearLayout>
@@ -207,10 +229,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
-            android:paddingRight="20dp"
             android:paddingStart="20dp"
-            android:paddingLeft="20dp">
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:id="@+id/t_sitoweb_valori"
@@ -222,6 +244,11 @@
                 android:focusable="true"
                 android:longClickable="true"
                 android:paddingBottom="5dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+                android:textCursorDrawable="@drawable/common_google_signin_btn_icon_light_normal_background"
                 android:textIsSelectable="true"
                 android:textSize="18sp" />
 

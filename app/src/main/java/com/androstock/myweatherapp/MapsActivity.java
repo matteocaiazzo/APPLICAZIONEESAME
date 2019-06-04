@@ -44,9 +44,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng boscodicapodimonte = new LatLng(40.8715738, 14.253335);
         LatLng virgiliano = new LatLng(40.798541, 14.1791104);
         LatLng mostraoltremare = new LatLng(40.8238024, 14.1925378);
+        LatLng pontiledibagnoli = new LatLng(40.8114430, 14.1657215);
+        LatLng villafloridiana = new LatLng(40.842571, 14.229738);
         mMap.addMarker(new MarkerOptions().position(boscodicapodimonte).title("BOSCO DI CAPODIMONTE"));
         mMap.addMarker(new MarkerOptions().position(virgiliano).title("VIRGILIANO"));
         mMap.addMarker(new MarkerOptions().position(mostraoltremare).title("MOSTRA OLTREMARE"));
+        mMap.addMarker(new MarkerOptions().position(pontiledibagnoli).title("PONTILE DI BAGNOLI"));
+        mMap.addMarker(new MarkerOptions().position(villafloridiana).title("VILLA FLORIDIANA"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(napoli));
         mMap.moveCamera(CameraUpdateFactory.zoomTo(5));
     }

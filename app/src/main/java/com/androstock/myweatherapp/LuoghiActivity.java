@@ -1,6 +1,6 @@
 package com.androstock.myweatherapp;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.text.util.Linkify;
 import android.view.View;
@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class LuoghiActivity extends AppCompatActivity {
+public class LuoghiActivity extends Activity {
 
 
     protected void onCreate(Bundle SavedInstanceState) {
@@ -24,7 +24,7 @@ public class LuoghiActivity extends AppCompatActivity {
 
         final Spinner spinnerDoc = (Spinner) findViewById(R.id.sp_luoghi);
         final String[] arraySpinner = new String[]{
-                "Capodimonte", "Virgiliano", "MostraOltremare"
+                "Capodimonte", "Virgiliano", "MostraOltremare", "PontileDiBagnoli", "VillaFloridiana"
         };
 
         ArrayAdapter<String> spin_adapter = new ArrayAdapter<String>(this,
@@ -57,7 +57,7 @@ public class LuoghiActivity extends AppCompatActivity {
                     orari.setText("07:00 - 20:30");
                     telefono.setText("08119706082");
                     servizi.setText("PuntiRistoro,Bagni");
-                    sitoweb.setText("n.d.");
+                    sitoweb.setText("Non disponibile");
                     Linkify.addLinks(telefono,Linkify.PHONE_NUMBERS);
 
                 }
@@ -72,7 +72,31 @@ public class LuoghiActivity extends AppCompatActivity {
                     Linkify.addLinks(sitoweb,Linkify.WEB_URLS);
 
                 }
+
+
+                if(luogoscelto.equals ("PontileDiBagnoli")) {
+                    orari.setText("08:00 - 19:00");
+                    telefono.setText("3314047412");
+                    servizi.setText("Area Passeggio");
+                    sitoweb.setText("Non disponibile");
+                    Linkify.addLinks(telefono, Linkify.PHONE_NUMBERS);
+                    Linkify.addLinks(sitoweb, Linkify.WEB_URLS);
+                }
+
+
+                if(luogoscelto.equals ("VillaFloridiana")) {
+                    orari.setText("08:30 - 19:00");
+                    telefono.setText("0815788418");
+                    servizi.setText("Area Passeggio");
+                    sitoweb.setText("www.ilparcopiubello.it/index.php/park/dettaglio/447");
+                    Linkify.addLinks(telefono, Linkify.PHONE_NUMBERS);
+                    Linkify.addLinks(sitoweb, Linkify.WEB_URLS);
+                }
+
             }
+
+
+
 
             @Override
             public void onNothingSelected (AdapterView < ? > parent){

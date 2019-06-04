@@ -1,6 +1,7 @@
 package com.androstock.myweatherapp;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.hardware.Camera;
@@ -24,7 +25,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  *
  * @author Justin Wetherell <phishman3579@gmail.com>
  */
-public class BpmActivity extends AppCompatActivity {
+public class BpmActivity extends Activity {
 
     private static final String TAG = "HeartRateMonitor";
     private static final AtomicBoolean processing = new AtomicBoolean(false);
