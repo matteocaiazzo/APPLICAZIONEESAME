@@ -2,7 +2,18 @@ package com.androstock.myweatherapp;
 
 public class GoodModel {
 
-    private String Luogo, Orari, Telefono, Servizi, SitoWeb;
+    private String Luogo;
+    private String Orari;
+    private String Telefono;
+    private String Servizi;
+    private String SitoWeb;
+
+
+
+
+
+
+
 
 
 

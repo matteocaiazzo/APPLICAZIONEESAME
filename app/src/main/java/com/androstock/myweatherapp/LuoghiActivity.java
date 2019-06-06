@@ -87,6 +87,7 @@ public class LuoghiActivity extends AppCompatActivity {
                                     names.add(goodModelArrayList.get(i).getLuogo().toString());
                                 }
 
+
                                 ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(LuoghiActivity.this, simple_spinner_item, names);
                                 spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); // The drop down view
                                 spinner.setAdapter(spinnerArrayAdapter);
@@ -98,77 +99,31 @@ public class LuoghiActivity extends AppCompatActivity {
                                 final TextView orari = (TextView) findViewById(R.id.t_orari_valore);
 
                                 spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-
-
-
+                                    /**
+                                     * Metodo invocato quando viene selezionato un ogetto dallo spinner
+                                     * @param adapterView
+                                     * @param view
+                                     * @param position
+                                     * @param id
+                                     */
                                     @Override
-                                    public void onItemSelected (AdapterView < ? > parent, View view, int position,
-                                                                long id){
-
-                                        String luogoscelto=spinner.getSelectedItem().toString();
-
-
-                                        if(luogoscelto.equals ("Capodimonte")) {
-                                            orari.setText("07:15 - 19:30");
-                                            telefono.setText("0817499111");
-                                            servizi.setText("Museo,Bagno,AreaCani");
-                                            sitoweb.setText("www.museocapodimonte.beniculturali.it");
-                                            Linkify.addLinks(telefono,Linkify.PHONE_NUMBERS);
-                                            Linkify.addLinks(sitoweb,Linkify.WEB_URLS);
-                                        }
-
-                                        if(luogoscelto.equals ("Virgiliano")) {
-                                            orari.setText("07:00 - 20:30");
-                                            telefono.setText("08119706082");
-                                            servizi.setText("PuntiRistoro,Bagni");
-                                            sitoweb.setText("Non disponibile");
-                                            Linkify.addLinks(telefono,Linkify.PHONE_NUMBERS);
-
-                                        }
-
-
-                                        if(luogoscelto.equals ("Mostra d'Oltremare")) {
-                                            orari.setText("07:00 - 17:30");
-                                            telefono.setText("0817258000");
-                                            servizi.setText("PuntiRistoro,Bagni,AreaCani,NoleggioBici");
-                                            sitoweb.setText("www.mostradoltremare.it");
-                                            Linkify.addLinks(telefono,Linkify.PHONE_NUMBERS);
-                                            Linkify.addLinks(sitoweb,Linkify.WEB_URLS);
-
-                                        }
-
-
-                                        if(luogoscelto.equals ("Pontile di Bagnoli")) {
-                                            orari.setText("08:00 - 19:00");
-                                            telefono.setText("3314047412");
-                                            servizi.setText("Area Passeggio");
-                                            sitoweb.setText("Non disponibile");
-                                            Linkify.addLinks(telefono, Linkify.PHONE_NUMBERS);
-                                            Linkify.addLinks(sitoweb, Linkify.WEB_URLS);
-                                        }
-
-
-                                        if(luogoscelto.equals ("Villa Floridiana")) {
-                                            orari.setText("08:30 - 19:00");
-                                            telefono.setText("0815788418");
-                                            servizi.setText("Area Passeggio");
-                                            sitoweb.setText("www.ilparcopiubello.it/index.php/park/dettaglio/447");
-                                            Linkify.addLinks(telefono, Linkify.PHONE_NUMBERS);
-                                            Linkify.addLinks(sitoweb, Linkify.WEB_URLS);
-                                        }
-
+                                    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                                        orari.setText(goodModelArrayList.get(position).getOrari().toString());
+                                        telefono.setText(goodModelArrayList.get(position).getTelefono().toString());
+                                        servizi.setText(goodModelArrayList.get(position).getServizi().toString());
+                                        sitoweb.setText(goodModelArrayList.get(position).getSitoWeb().toString());
+                                        Linkify.addLinks(telefono, Linkify.PHONE_NUMBERS);
+                                        Linkify.addLinks(sitoweb, Linkify.WEB_URLS);
                                     }
 
-
-
+                                    /**
+                                     * Metodo quando non viene selezionato un ogetto dallo spinner
+                                     * @param adapter
+                                     */
 
                                     @Override
-                                    public void onNothingSelected (AdapterView < ? > parent){
-
+                                    public void onNothingSelected(AdapterView<?> adapter) {
                                     }
-
-
                                 });
 
                             }
