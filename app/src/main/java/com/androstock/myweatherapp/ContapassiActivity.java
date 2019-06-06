@@ -53,7 +53,7 @@ public class ContapassiActivity extends Activity {
 
         if (sensor != null) {
             sensorManager.registerListener(mySensorEventListener, sensor,
-                    SensorManager.SENSOR_DELAY_NORMAL);
+                    SensorManager.SENSOR_DELAY_FASTEST);
             Log.i("ContapassiActivity", "Registerered for stepcounter Sensor");
 
         } else {
