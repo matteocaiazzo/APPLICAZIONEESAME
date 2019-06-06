@@ -40,13 +40,15 @@
             android:paddingBottom="20dp">
 
             <Spinner
-                android:id="@+id/sp_luoghi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingLeft="60dp"
-                android:paddingRight="60dp"
-                android:paddingBottom="30dp" />
+                android:id="@+id/spCompany"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/spinner"
+                android:spinnerMode="dropdown"/>
+
         </LinearLayout>
 
         <LinearLayout
