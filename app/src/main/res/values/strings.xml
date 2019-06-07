@@ -8,9 +8,6 @@
     <string name="title_activity_contapassi">Contapassi</string>
 
 
-
-
-    <string name="benvenuto">Benvenuto</string>
     <string name="luoghi">Luoghi</string>
     <string name="maps">Maps</string>
     <string name="meteo">Meteo</string>
@@ -27,6 +24,7 @@
 
     <string name="passipercorsioggi">Passi percorsi oggi</string>
     <string name="passitotalipercorsi">Passi totali percorsi</string>
+    <string name="benvenuto">Benvenuto</string>
 
 
 </resources>

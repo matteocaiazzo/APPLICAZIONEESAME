@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">RunAppNaples</string>
+    <string name="title_activity_maps">Mapas</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_luoghi">Lugares</string>
+    <string name="title_activity_bpm">Bpm</string>
+    <string name="title_activity_contapassi">Pedometro</string>
+
+    <string name="benvenuto">Bemvenidos</string>
+    <string name="luoghi">Lugares</string>
+    <string name="maps">Mapas</string>
+    <string name="meteo">Tempo</string>
+    <string name="contapassi">Pedometro</string>
+    <string name="bpm">Frequencia cardìaca</string>
+    <string name="default_text">Calculador de Frequencia Cardìaca</string>
+
+
+    <string name="destinazione">Destinaçao</string>
+    <string name="orari">Horarìo</string>
+    <string name="telefono">Numero de telefone</string>
+    <string name="servizi">Serviços</string>
+    <string name="sitoweb">Sitìo Web</string>
+
+    <string name="passipercorsioggi">Passos</string>
+    <string name="passitotalipercorsi">Passos de Hoje</string>
+    
+</resources>
